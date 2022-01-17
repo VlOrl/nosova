@@ -1,0 +1,382 @@
+@media(max-width:1215px){
+    .check_list .check_list_inner .content_check .block_check .block_text_check .title_block_text_check {
+        max-width: 180px;
+    }
+    .text_check{
+        max-width: 500px;
+    }
+}
+@media(max-width:1208px){
+    .about_inner{
+        display: block;
+    }
+    .about .about_inner .right_block_about {
+        max-width: none; 
+        margin-left: 20px;
+        flex-direction: column;
+        display: flex;
+        order: 1;
+        justify-content: center;
+    }
+    .left_block_about{
+        order: 2;
+        padding-top: 40px;
+    }
+    .title {
+        text-align: center;
+    }
+}
+@media(max-width:1175px){
+    .certificate .certificate_inner .content_certificate .block_certificate {
+        width: 31%;
+    }
+    .header .header_inner .menu .list_menu .href_link {
+        padding: 0px 7px;
+    }
+}
+@media(max-width:1070px){
+    .header .header_inner .menu .list_menu {
+        max-width: 500px;
+    }
+    
+}
+@media(max-width:1025px){
+    .main .content_main_about {
+        padding: 28px 25px 20px 25px;
+    }
+    .help .help_inner .content_help .block_help {
+        width: 34%;
+    }
+    .sale .container {
+        background-image: none;
+    }
+}
+@media(max-width:985px){
+    .header .header_inner .tel {
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+
+    .burger_header{
+        cursor: pointer;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        display: block;
+        top: 5px;
+        z-index: 6;
+    }
+    .burger_header::before,
+    .burger_header::after{
+        content: '';
+        background-color: #000;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        transition: all 0.3s;
+        left: 0;
+    }
+    .burger_header::before{
+        top: 0;
+    }
+    .burger_header::after{
+        bottom: 0;
+    }
+    .burger_header span{
+        position: absolute;
+        background-color: #000;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transition: all 0.3s;
+        top: 9px;
+
+    }
+    .burger_header.active{
+        position: fixed;
+        top: 20px;
+        left: 20px;
+    }
+    .burger_header.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .burger_header.active span{
+        transform: scale(0);
+    }
+    body.lock{
+        overflow: hidden;
+    }
+    .menu{
+        margin-top: 0px;
+    }
+    nav {
+        top: -100%;
+        position: fixed;
+        top: 0;
+        transition: all 0.3s;
+        display: none;
+        left: 0;
+        right: 0;
+        text-align: right;
+        background-color: #fff;
+        padding: 0px;
+        border-radius: 0px;
+        z-index: 3;
+        
+        width: 100%;
+        
+        padding-top: 50px;
+    }
+    .header .header_inner .menu .list_menu .href_link::before {
+        height: 2px;
+        bottom: 0px;
+    }
+    .list_menu{
+        margin: 0px;
+        text-align: center;
+        line-height: 60px;
+    }
+    .header .header_inner .menu .list_menu {
+        max-width: none;
+        flex-direction: column;
+    }
+    .header .header_inner .menu .list_menu .href_link {
+        color: #000;
+    }
+    .menu.active{
+        display: block;
+    }
+    .burger_header.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+}
+@media(max-width:960px){
+    .help .help_inner .content_help .block_help {
+        width: 43%;
+    }
+    .help .help_inner .help_title::before {
+        display: none;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .help .help_inner {
+        padding-top: 50px;
+    }
+    .how .how_inner .content_how .top_block_how .block_text_how::after, .how .how_inner .content_how .bottom_block_how .block_text_how::after {
+        display: none;
+    }
+
+    .how .how_inner .content_how .top_block_how .block_top, .how .how_inner .content_how .bottom_block_how .block_top {
+        padding: 30px 20px;
+    }
+    .how .how_inner .content_how .bottom_block_how .block_bottom {
+        padding-top: 60px;
+    }
+    .how .how_inner .content_how .top_block_how, .how .how_inner .content_how .bottom_block_how {
+        flex-wrap: wrap;
+    }
+    .how .how_inner .content_how .bottom_block_how {
+        margin-top: 26px;
+    }
+    .how .how_inner .content_how .top_block_how .block_top:before, .how .how_inner .content_how .bottom_block_how .block_top:before {
+        top: -24px;
+    }
+    .how .how_inner .content_how .bottom_block_how .block_bottom:before {
+        top: 0px;
+    }
+}
+@media(max-width:890px){
+    .certificate .certificate_inner .content_certificate .block_certificate {
+        width: 47%;
+    }
+}
+@media(max-width:840px){
+    .footer .footer_inner .bottom_footer .content_bottom_footer {
+       max-width: 550px;
+    }
+}
+@media(max-width:820px){
+    .services .services_inner .content_services {
+        justify-content: center;
+    }
+    .text_check{
+        display: none;
+    }
+}
+@media(max-width:800px){
+    .main .content_main_about {
+        flex-wrap: wrap;
+    }
+    .block_main_about{
+        padding-top: 40px;
+    }
+}
+@media(max-width:750px){
+    .help .help_inner .content_help .block_help {
+        width: 100%;
+    }
+    .help .help_inner .content_help {
+        justify-content: center;
+    }
+    .help .help_inner .content_help .block_help .text_help_content {
+        max-width: none;
+    }
+    .quote .title_quote {
+        padding-top: 100px;
+        padding-bottom: 95px;
+    }
+    .sale .sale_text {
+        font-size: 24px;
+    }
+    .footer .footer_inner .content_footer {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:650px){
+    .main .btns_main .href_btn_main {
+        padding: 10px 13px;
+    }
+    .main .btns_main .btn_main {
+        margin-right: 15px;
+    }
+    .main .title_main {
+        font-size: 40px;
+    }
+}
+@media(max-width:600px){
+    .certificate .certificate_inner .content_certificate .block_certificate {
+        width: 100%;
+        text-align: center;
+    }
+    .certificate .certificate_inner .content_certificate .block_certificate .text_block_certificate {
+        justify-content: center;
+    }
+    .footer .footer_inner .bottom_footer .content_bottom_footer {
+        max-width: none; 
+        flex-wrap: wrap;
+    }
+    .cookie_text_footer{
+        padding-top: 20px;
+    }
+}
+@media(max-width:580px){
+    .main_about{
+        width: 100%;
+    }
+    .about .about_inner .left_block_about .quote_about:before {
+        display: none;
+    }
+    .about .about_inner .left_block_about .quote_about {
+        padding-left: 0px;
+    }
+    .how .how_inner .content_how .top_block_how, .how .how_inner .content_how .bottom_block_how {
+        justify-content: center;
+    }
+}
+@media(max-width:533px){
+    .main .content_main_about {
+        justify-content: center;
+        text-align: center;
+    }
+    .block_main_about {
+       text-align: center;
+    }
+}
+@media(max-width:505px){
+    .main .btns_main {
+        flex-wrap: wrap;
+        padding-top: 0px;
+    }
+    .title {
+        font-size: 29px;
+    }
+    .main .title_main {
+        padding-top: 20px;
+    }
+    .main .btns_main .btn_main {
+        margin-top: 50px;
+    }
+    .main .title_main {
+        font-size: 30px;
+    }
+    .quote .title_quote {
+        padding-top: 166px;
+        padding-bottom: 95px;
+        font-size: 29px;
+        color: #fff;
+        max-width: 800px;
+    }
+    .services .services_inner .title_services {
+        font-size: 33px;
+        position: relative;
+    }
+    .services .services_inner .title_services::after {
+        display: none;
+    }
+    .check_list .check_list_inner .content_check .block_check {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .check_list .check_list_inner .content_check .block_check .block_text_check .title_block_text_check {
+        max-width: none;
+        text-align: center;
+    }
+    svg{
+        display: none;
+    }
+    .check_list .check_list_inner .content_check .block_check .block_btn_check .text_btn_check {
+        margin-right: 0px; 
+    }
+    .check_list .check_list_inner .content_check .block_check .block_btn_check {
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+}
+@media(max-width:370px){
+    .main .title_main {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .quote .title_quote {
+        padding-top: 92px;
+        padding-bottom: 73px;
+        font-size: 22px;
+    }
+    .sale .sale_text {
+        font-size: 20px;
+    }
+    .title {
+        font-size: 20px;
+    }
+}
+@media(max-width:340px){
+    .help .help_inner .content_help .block_help img {
+        padding-left: 115px;
+        
+    }
+    .help .help_inner .content_help .block_help {
+        display: block;
+    }
+    .services .services_inner .title_services {
+        font-size: 30px;
+        position: relative;
+    }
+    .services .services_inner .sub_title_services {
+        max-width: 155px;
+    }
+    .certificate_img{
+        display: none;
+    }
+
+    .certificate .certificate_inner .content_certificate .block_certificate img {
+        width: 100%;
+    }
+}
